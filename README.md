@@ -14,4 +14,4 @@ Simply put compiled DLLs and/or PowerShell scripts into `Plugins` folder within 
 
 ## References
 
-* [Blog post](http://blog.MartinMiles.net/welcome-sifon-a-must-have-tool-for-any-sitecore-developer-to-simplify-most-of-you-day-today-devops-activities) - Welcome Sifon - a must-have tool for any Sitecore developer,to simplify most of you day-today DevOps activities
+* [Blog post](http://blog.MartinMiles.net/post/welcome-sifon-a-must-have-tool-for-any-sitecore-developer-to-simplify-most-of-you-day-today-devops-activities) - Welcome Sifon - a must-have tool for any Sitecore developer,to simplify most of you day-today DevOps activities
