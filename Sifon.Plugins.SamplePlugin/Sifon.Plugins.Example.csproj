@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Sifon\Plugins\DLLs\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Sifon.Abstractions, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\1.01\Sifon.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sifon.Shared, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\1.01\Sifon.Shared.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,34 +51,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvancedPlugin\AdvancedPlugin.cs" />
-    <Compile Include="AdvancedPlugin\AdvancedPluginForm.cs">
+    <Compile Include="LongRunningPlugin\LongRunningPlugin.cs" />
+    <Compile Include="ShareAPI\SharedApiExample.cs" />
+    <Compile Include="VisualPlugin\VisualPlugin.cs" />
+    <Compile Include="VisualPlugin\AdvancedPluginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdvancedPlugin\AdvancedPluginForm.Designer.cs">
+    <Compile Include="VisualPlugin\AdvancedPluginForm.Designer.cs">
       <DependentUpon>AdvancedPluginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdvancedPlugin\Code\DictionaryBindingList.cs" />
-    <Compile Include="AdvancedPlugin\Code\Extensions.cs" />
-    <Compile Include="AdvancedPlugin\Code\Pair.cs" />
+    <Compile Include="VisualPlugin\Code\DictionaryBindingList.cs" />
+    <Compile Include="VisualPlugin\Code\Extensions.cs" />
+    <Compile Include="VisualPlugin\Code\Pair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SamplePlugin\SamplePlugin.cs" />
+    <Compile Include="MinimalPlugin\MinimalPlugin.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sifon.Abstractions\Sifon.Abstractions.csproj">
-      <Project>{c66674b2-b3e5-4d0d-aaaf-88d857b5d757}</Project>
-      <Name>Sifon.Abstractions</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AdvancedPlugin\AdvancedPluginForm.resx">
+    <EmbeddedResource Include="VisualPlugin\AdvancedPluginForm.resx">
       <DependentUpon>AdvancedPluginForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <None Include="PowerShell\Test Progress.ps1" />
-    <None Include="PowerShell\Test-SqlServerConnection.ps1" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

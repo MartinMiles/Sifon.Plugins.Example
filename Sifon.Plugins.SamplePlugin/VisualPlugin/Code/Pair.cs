@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Sifon.Plugins.Example.AdvancedPlugin.Code
+namespace Sifon.Plugins.Example.VisualPlugin.Code
 {
     public sealed class Pair<TKey, TValue>
     {

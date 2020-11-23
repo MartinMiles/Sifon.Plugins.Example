@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Sifon.Plugins.Example.AdvancedPlugin.Code;
+using Sifon.Plugins.Example.VisualPlugin.Code;
 
-namespace Sifon.Plugins.Example.AdvancedPlugin
+namespace Sifon.Plugins.Example.VisualPlugin
 {
     public partial class AdvancedPluginForm : Form
     {

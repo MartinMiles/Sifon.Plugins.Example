@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Sifon.Plugins.Example.AdvancedPlugin.Code
+namespace Sifon.Plugins.Example.VisualPlugin.Code
 {
     public class DictionaryBindingList<TKey, TValue> : BindingList<Pair<TKey, TValue>>
     {
@@ -29,5 +29,6 @@ namespace Sifon.Plugins.Example.AdvancedPlugin.Code
                 ResetBindings();
             }
         }
+
     }
 }

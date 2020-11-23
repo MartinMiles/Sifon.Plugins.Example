@@ -1,4 +1,4 @@
-﻿namespace Sifon.Plugins.Example.AdvancedPlugin
+﻿namespace Sifon.Plugins.Example.VisualPlugin
 {
     partial class AdvancedPluginForm
     {
