@@ -1,6 +1,11 @@
 # Sifon.Plugins.Example
 These are example of C# and PowerShell plugins to be used with Sifon tool
 
+## Compile and build
+
+Once cloned and before opening solution in Viasual Studio, please open `nuget.config` and replace the value `GITHUB_TOKEN` with a token 968a050c84df7faca33ee9b379e802ab35898777 
+
+
 ## Usage
 
 Simply put compiled DLLs and/or PowerShell scripts into `Plugins` folder within Sifon, and that's it!
