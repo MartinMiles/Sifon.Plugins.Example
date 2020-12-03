@@ -11,7 +11,7 @@ These are example of C# and PowerShell plugins to be used with Sifon tool
 
 `968a050c84df7faca33ee9b379e802ab35898777`
 
-It has been done in order to be able providing public access to the packages. At the moment GitHub prevent one from storing tokens on commits and rewokes those found, even that is a read-only token allowing access only to packages. That is why we have to prevent this token from auto-deletion by putting some value in the middle of it in order to commit and push to GitHub.
+It has been done to be able providing public access to the packages. At the moment GitHub prevent one from storing tokens on commits and revokes those found, even that is a read-only token allowing access only to packages. That is why we must prevent this token from auto-deletion by putting some value in the middle of it in order to commit and push to GitHub.
 
 
 ## Usage
