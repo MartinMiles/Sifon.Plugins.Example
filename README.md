@@ -3,7 +3,15 @@ These are example of C# and PowerShell plugins to be used with Sifon tool
 
 ## Compile and build
 
-Once cloned and before opening solution in Viasual Studio, please open `nuget.config` and replace the value `GITHUB_TOKEN` with a token 968a050c84df7faca33ee9b379e802ab35898777 
+**Important!** Once cloned and before opening solution in Visual Studio, please open `nuget.config` and remove the comment and all underscores from the value of `ClearTextPassword` so that it becomes 40 characters long hex token. So that a value looking like this
+
+ `968a050c84df7__REMOVE_THIS_COMMENT_AND_UNDERSCORES_AROUND_IT__faca33ee9b379e802ab35898777`
+
+ becomes this:
+
+`968a050c84df7faca33ee9b379e802ab35898777`
+
+It has been done in order to be able providing public access to the packages. At the moment GitHub prevent one from storing tokens on commits and rewokes those found, even that is a read-only token allowing access only to packages. That is why we have to prevent this token from auto-deletion by putting some value in the middle of it in order to commit and push to GitHub.
 
 
 ## Usage
